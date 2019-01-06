@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Suite">
+	<test name="Account Management">
+		<classes>
+			<class
+				name="com.qa.BankOfAmerica.AccountManagement.TestNG.MethodTest">
+				<methods>
+					<include name="demo.*" />
+
+				</methods>
+			</class>
+			<class
+				name="com.qa.BankOfAmerica.AccountManagement.TestNG.MobileTest" />
+			<class
+				name="com.qa.BankOfAmerica.AccountManagement.TestNG.ApiTest" />
+			<class
+				name="com.qa.BankOfAmerica.AccountManagement.TestNG.WebTest" />
+			<class
+				name="com.qa.BankOfAmerica.AccountManagement.TestNG.PrivateTest">
+				<methods>
+					<exclude name="private.*" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+	<test name="Personal Account Management">
+		<classes>
+			<class
+				name="com.qa.BankOfAmerica.AccountManagement.TestNG.PersonalTest" />
+		</classes>
+	</test>
+</suite> 

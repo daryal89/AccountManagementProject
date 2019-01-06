@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.qa.BankOfAmerica.AccountManagement.TestNG.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Loan Department(failed)">
+    <classes>
+      <class name="com.qa.BankOfAmerica.AccountManagement.TestNG.MobileTest">
+        <methods>
+          <include name="mobileBusinessLoan"/>
+          <include name="mobileHomeLoan"/>
+        </methods>
+      </class> <!-- com.qa.BankOfAmerica.AccountManagement.TestNG.MobileTest -->
+    </classes>
+  </test> <!-- Loan Department(failed) -->
+</suite> <!-- Failed suite [Suite] -->

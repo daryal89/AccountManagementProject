@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+	<parameter name="url" value="http://www.bankofAmerica.com" />
+	<parameter name="username" value="dhrubaaryal" />
+	<parameter name="password" value="abcd1234" />
+	<test name="Parameterization test">
+		<classes>
+			<class
+				name="com.qa.BankOfAmerica.AccountManagement.TestNG.ParameterizationTest" />
+		</classes>
+	</test>
+</suite> 

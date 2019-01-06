@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Regression Suite]" parallel="tests">
+  <test thread-count="3" name="Regression Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.qa.BankOfAmerica.AccountManagement.TestNG.WebTest">
+        <methods>
+          <include name="webBusinessLoan"/>
+          <include name="webHomeLoan"/>
+        </methods>
+      </class> <!-- com.qa.BankOfAmerica.AccountManagement.TestNG.WebTest -->
+      <class name="com.qa.BankOfAmerica.AccountManagement.TestNG.MobileTest">
+        <methods>
+          <include name="mobileBusinessLoan"/>
+          <include name="mobileHomeLoan"/>
+        </methods>
+      </class> <!-- com.qa.BankOfAmerica.AccountManagement.TestNG.MobileTest -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [Regression Suite] -->

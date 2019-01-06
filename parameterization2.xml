@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+	<test name="Loan Test">
+		<parameter name="url" value="http://www.facebook.com" />
+		<parameter name="username" value="rabindra@gmail.com" />
+		<classes>
+			<class
+				name="com.qa.BankOfAmerica.AccountManagement.TestNG.MethodTest" />
+		</classes>
+	</test>
+	<test name="bank Loan">
+		<parameter name="url" value="http://www.bankofAmerica.com" />
+		<parameter name="username" value="RituAdhikari" />
+		<parameter name="password" value="Helloworld" />
+		<classes>
+			<class
+				name="com.qa.BankOfAmerica.AccountManagement.TestNG.ParameterizationTest">
+			</class>
+		</classes>
+	</test>
+</suite> 
